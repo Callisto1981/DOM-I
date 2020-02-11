@@ -101,7 +101,7 @@ const mainHeading = document.querySelectorAll(".main-content .text-content h4");
 const mainContent = document.querySelectorAll(".main-content .text-content p");
 const middleImg = document.querySelector("#middle-img");
 
-mainHeading[0].textContent = siteContent["main-content"]["features=h4"];
+mainHeading[0].textContent = siteContent["main-content"]["features-h4"];
 mainContent[0].textContent = siteContent["main-content"]["features-content"];
 mainHeading[1].textContent = siteContent["main-content"]["about-h4"];
 mainContent[1].textContent = siteContent["main-content"]["about-content"];
@@ -109,11 +109,11 @@ mainContent[1].textContent = siteContent["main-content"]["about-content"];
 middleImg.src = siteContent["main-content"]["middle-img-src"];
 
 mainHeading[2].textContent = siteContent["main-content"]["services-h4"];
-mainHeading[2].textContent = siteContent["main-content"]["services-content"];
+mainContent[2].textContent = siteContent["main-content"]["services-content"];
 mainHeading[3].textContent = siteContent["main-content"]["product-h4"];
-mainHeading[3].textContent = siteContent["main-content"]["product-content"];
+mainContent[3].textContent = siteContent["main-content"]["product-content"];
 mainHeading[4].textContent = siteContent["main-content"]["vision-h4"];
-mainHeading[4].textContent = siteContent["main-content"]["vision-content"];
+mainContent[4].textContent = siteContent["main-content"]["vision-content"];
 
 const contactH4 = document.querySelector(".contact h4");
 const contactContent = document.querySelectorAll(".contact p");
@@ -124,13 +124,3 @@ contactContent[2].textContent = siteContent["contact"]["email"];
 
 const footerContent = document.querySelector("footer p");
 footerContent.textContent = siteContent["footer"]["copyright"];
-
-const header = document.querySelector("header");
-header.style.background = "lightgrey";
-
-const ctaSection = document.querySelector(".cta");
-ctaSection.style.background = "darkgrey";
-
-const mainSection = document.querySelector(".main-content");
-mainSection.style.background = "black";
-mainSection.style.color = "white";
