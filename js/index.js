@@ -46,17 +46,17 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
-//home
-const links = document.querySelector("a");
-links.classList.add("services");
-document.querySelector(".services");
-links.textContent = "Services";
+//Nav
+const links = document.querySelectorAll("a");
+links[0].textContent = siteContent["nav"]["nav-item-1"];
+links[1].textContent = siteContent["nav"]["nav-item-2"];
+links[2].textContent = siteContent["nav"]["nav-item-3"];
+links[3].textContent = siteContent["nav"]["nav-item-4"];
+links[4].textContent = siteContent["nav"]["nav-item-5"];
+links[5].textContent = siteContent["nav"]["nav-item-6"];
 
-//const product = document.querySelector("a"); //getElementsByTagName("a");
-links.classList.add("product");
-document.querySelector(".product");
-links.textContent = "Product";
-
-//Array.from(para).forEach(par => {
-//par.textContent = "Home";
-//});
+links[0].style.color = "green";
+links[1].style.color = "green";
+links[2].style.color = "green";
+links[3].style.color = "green";
+links[4].style.color = "green";
