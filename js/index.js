@@ -60,3 +60,43 @@ links[1].style.color = "green";
 links[2].style.color = "green";
 links[3].style.color = "green";
 links[4].style.color = "green";
+links[5].style.color = "green";
+
+const nav = document.querySelector("nav");
+const firstItem = document.createElement("a");
+const lastItem = document.createElement("a");
+
+firstItem.href = "#";
+firstItem.textContent = "First";
+firstItem.style.color = "green";
+
+lastItem.href = "#";
+lastItem.textContent = "Last";
+lastItem.style.color = "green";
+
+nav.prepend(firstItem);
+nav.append(lastItem);
+
+const ctaText = document.querySelector(".cta .cta-text");
+const currentH1 = document.querySelector("h1");
+const h1Arr = siteContent["cta"]["h1"].split(" ");
+const domH1 = document.createElement("h1");
+const isH1 = document.createElement("h1");
+
+ctaText.prepend(isH1);
+ctaText.prepend(domH1);
+
+domH1.textContent = h1Arr[0];
+isH1.textContent = h1Arr[1];
+currentH1.textContent = h1Arr[2];
+
+const button = document.querySelector("button");
+button.textContent = siteContent["cta"]["button"];
+
+const headerImg = document.querySelector("#cta-img");
+headerImg.src = siteContent["cta"]["img-src"];
+headerImg.alt = "Main header circle image";
+
+const mainHeading = document.querySelectorAll(".main-content .text-content h4");
+const mainContent = document.querySelectorAll(".main-content .text-content p");
+const middleImg = document.querySelector("#middle-img");
